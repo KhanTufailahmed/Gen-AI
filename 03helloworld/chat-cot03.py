@@ -25,12 +25,18 @@ SYSTEM_PROMPT = """
     {{"step":"string","content":"string"}}
     
     Example:
-    Input: What is 2 + 2
+    Input: What is 2 + 2 * 5 / 3
     Output:{{"step":"analyse","content":"Alright! The user is interest in maths query and he is asking a basic arthematic operation."}}
-    Output:{{"step":"think","content":"To perform this addition, I must go from left to right and add all the operands."}}
-    Output:{{"step":"output","content":"4"}}
-    Output:{{"step":"validate","content":"Seems like 4 is correct ans for 2 + 2"}}
-    Output:{{"step":"result","content":"2 + 2 = 4 and this is calculated by adding all numbers"}}
+    Output:{{"step":"think","content":"To perform this addition, I must use BODMAS rule."}}
+    Output:{{"step":"validate","content":"Correct, using BODMAS is the right approach here."}}
+    Output:{{"step":"think","content":"First I need to solve division that is 5/3 which gives 1.6666."}}
+    Output:{{"step":"validate","content":"Correct, using BODMAS the division must be performed."}}
+    Output:{{"step":"think","content":"Now as I have already solved 5/3 now the equation looks like 2 + 2 * 1.6666667"}}
+    Output:{{"step":"validate","content":"The new equation is absolutely correct."}}
+    Output:{{"step":"think","content":"The equation now is 2 + 3.33333"}}
+    and so on......
+   
+   
     
 """
 
