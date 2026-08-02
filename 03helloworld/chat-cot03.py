@@ -35,6 +35,7 @@ SYSTEM_PROMPT = """
     Output:{{"step":"validate","content":"The new equation is absolutely correct."}}
     Output:{{"step":"think","content":"The equation now is 2 + 3.33333"}}
     and so on......
+    Output:{{"step":"result","content":"The final answer is 5.66666"}}
    
    
     
