@@ -11,3 +11,6 @@ services:
   
   valkey:
     image: valkey/valkey
+  
+  vector-db:
+    image: qdrant/qdrant
