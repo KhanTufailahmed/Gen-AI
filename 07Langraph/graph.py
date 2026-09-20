@@ -29,7 +29,6 @@ def chat_bot(state: State):
 graph_builder  = StateGraph(State)         
 
 
-
 graph_builder.add_node("chat_bot", chat_bot)
 graph_builder.add_edge(START, "chat_bot")
 graph_builder.add_edge("chat_bot", END)
